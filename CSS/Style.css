@@ -1,0 +1,147 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    overflow-x: hidden;
+
+    animation: shakeBody 5s linear 0s infinite;
+}
+
+@keyframes shakeBody{
+    0%{
+        transform: translateY(-1vw);
+    }
+    50%{
+        transform: translateY(1vw);
+    }
+    100%{
+        transform: translateY(-1vw);
+    }
+}
+
+/* OVERFLOW HIDDEN CLASS */
+.overflowHidden{
+    width: 100vw;
+    
+    overflow: hidden;
+}
+
+/* CONTAINER */
+#container{
+    position: relative;  /* To position it's Children. */
+}
+
+/* SKY */
+#sky{
+    display: flex;
+    
+    width: 300vw;
+    
+    animation: moveBack 5s linear 0s infinite;
+}
+
+@keyframes moveBack{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+
+#sky img{
+    width: 100vw;
+    height: 45vw;
+}
+
+/* BACKGROUND */
+#background{
+    width: 100vw;
+    
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+/* TRACK */
+#track{
+    position: absolute;
+    top: 80%;
+    
+    z-index: 1;
+}
+
+#track > div{
+    display: flex;
+    
+    width: 300vw;
+
+    animation: moveBack 5s linear 0s infinite;
+}
+
+#track div img{
+    width: 100vw;
+    height: 18vw;
+}
+
+/* CAR */
+#car{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    
+    transform: rotate(-2deg);
+    
+    z-index: 2;
+}
+
+#car img:nth-child(1){
+    width: 36vw;
+    height: 10vw;
+    
+    display: block;
+    
+    animation: shakeCar .5s linear 0s infinite;
+}
+
+@keyframes shakeCar{
+    0%{
+        transform: translateY(-0.2vw);
+    }
+    50%{
+        transform: translateY(0.2vw);
+    }
+    100%{
+        transform: translateY(-0.2vw);
+    }
+}
+
+#leftWheel{
+    width: 22.6%;
+    height: 79.7%;
+
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    
+    animation: rotateWheel .2s linear 0s infinite;
+}
+
+#rightWheel{
+    width: 22.6%;
+    height: 74.5%;
+    
+    position: absolute;
+    top: 36.5%;
+    left: 60.7%;
+    
+    animation: rotateWheel .2s linear 0s infinite;
+}
+
+@keyframes rotateWheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}

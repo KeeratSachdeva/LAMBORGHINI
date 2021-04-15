@@ -1,0 +1,57 @@
+/* BODY */
+body{
+    width: 2400px;
+    margin: auto;
+}
+
+.overflowHidden{
+    width: 2400px;
+}
+
+/* SKY */
+#sky{
+    width: 7200px;
+}
+
+@keyframes moveBack{
+    100%{
+        transform: translateX(-4800px);
+    }
+}
+
+#sky img{
+    width: 2400px;
+    height: 1080px;
+}
+
+/* BACKGROUND */
+#background{
+    width: 2400px;
+}
+
+#track > div{
+    width: 7200px;
+}
+
+#track div img{
+    width: 2400px;
+    height: 432px;
+}
+
+/* CAR */
+#car img:nth-child(1){
+    width: 864px;
+    height: 240px;
+}
+
+@keyframes shakeCar{
+    0%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}
