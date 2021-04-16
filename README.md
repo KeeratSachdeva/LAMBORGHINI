@@ -1,7 +1,7 @@
 # # Introduction :
 A fully responsive ***Moving Lamborghini Car🚘 Animation*** created using **HTML <>**, **CSS #** and **JavaScript JS**.
 
-## # Technology Stack ⚙ :
+## # Technology Stack ⚙:
 * **HTML <>**
 * **CSS #**
 * **JavaScript JS**
